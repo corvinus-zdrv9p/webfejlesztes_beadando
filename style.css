@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("kepek/hatter.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*-------FEJLÉC--------*/
+header{
+    background-color: #706252;
+    margin-bottom: 30px;
+}
+header h1 {
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+header hr{
+    width: 80%;
+    border: rgba(255, 255, 255, 0.733) solid 1px;
+}
+
+/* Menu */
+nav li a {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    margin: 5px;
+    color: black;
+    background-color: #96705b;
+    font-size: 20px;
+    font-weight: bold;
+    }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100%;
+}
+a#current{
+    background-color: rgb(197, 197, 197);
+}
+a:hover{
+    background-color: #b89a77;
+}
+
+/*-------Tartalom-------*/
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+span.dolt {
+    font-style: italic;
+}
+span.felkover {
+    font-weight: bold;
+}
+
+article {
+    background-color: #a99985ee;
+    border: black solid 2px;
+    margin: 3px;
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+}
+article img {
+    width: 40%;
+    height: auto;
+    border: solid #000000 4px;
+    margin: 10px;
+}
+article img.kep_jobb {
+    float: right;
+}
+article img.kep_bal {
+    float: left;
+}
+div hr {
+    border: 1px solid black;
+}
+article p {
+    margin: 20px;
+}
+article h2 {
+    text-align: center;
+}
+article li {
+    margin: 10px;
+    list-style-type: none;
+}
+article img:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+
+div aside {
+    border: black solid 2px;
+    margin: 3px;
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+}
+aside h3 {
+    text-align: center;
+}
+aside h4 {
+    text-align: center;
+}
+aside p {
+    margin: 20px;
+}
+aside.erdekesseg {
+    background-color: #e4bd69ee;
+}
+aside.mernokok {
+    background-color: #b06912ee;
+}
+
+.kerdes {
+        border: black solid 2px;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: #928982;
+        margin-bottom: 5px;
+}
+
+
+/* Betűkészletek */
+h1 {
+    font-family:'trainone', 'Helvetica';}
+@font-face {
+    font-family: "trainone";
+    src: url("betu/TrainOne-Regular.ttf"); 
+}
+h2, h3, nav li a {
+    font-family:'saira', 'Helvetica';}
+@font-face {
+    font-family: "saira";
+    src: url("betu/SairaExtraCondensed-Black.ttf"); 
+}
+
+#ellenorzo {
+    background-color: #928982;
+    border: #000000 solid 2px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#eredmeny {
+    background-color: #928982;
+    border: #000000 solid 2px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+}
+#elkuld{
+    background-color: #928982;
+    border: #000000 solid 2px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+/*---------LÁBLÉC-------*/
+footer {
+    background-color: rgba(255, 255, 255, 0.893);
+    margin-top: 50px;
+}
+.lablec{
+    width: 100%;
+}
+footer aside{
+    text-align: center;
+}
+
+
+@media all and (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article {
+        flex-basis: 48%;
+    }
+    aside {
+        flex-basis: 48%;
+    }
+    article.tortenet {
+        flex-basis: 90%;
+    }
+    #kviz {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article {
+        flex-basis:48%;
+    }
+    aside {
+        flex-basis: 48%;
+    }
+    article.tortenet {
+        flex-basis: 90%;
+    }
+    #kviz {
+        flex-basis: 80%;
+    }
+}

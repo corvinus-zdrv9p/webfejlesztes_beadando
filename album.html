@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gyurina Bercel">
+    <meta name="copyright" content="Tanulási célra">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <meta name="description" content="Vonatokról szóló oldal">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/favicon.ico" type="image/x-icon">
+
+    <title>Mozdony Világ</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="galeria/galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="galeria/galleria-1.6.1/dist/themes/classic/galleria.classic.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#images').galleria(
+                width = 500,
+                height = 500
+            );
+        });
+    </script>
+    <style>
+        .galleria {
+            margin: auto;
+            width: vw;
+            height: 90vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="container">
+        <h1>Mozdony Világ</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="mozdonyok.html">Mozdonyok</a></li>
+                <li><a href="tortenet.html">Magyar vasút története</a></li>
+                <li><a id="current" href="album.html">Album</a></li>
+                <li><a href="kviz.html">Kvíz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article id="images" class="galleria">
+            <img src="kepek/1.jpg" alt="Kelenföld" title="V63 049">
+            <img src="kepek/2.jpg" alt="160 km/h legnagyobb sebességre képes" title="630 138 (V63 138) Pilisen.">
+            <img src="kepek/3.jpg" alt="Forró-Encs vasútállomás" title="A Szolnokról elnevezett 630 030">
+            <img src="kepek/4.jpg" alt="Kiállítva a Vasúttörténeti parkban" title="V63 001">
+            <img src="kepek/5.jpg" alt="Pécs" title="001-es pályaszámú M61-es mozdony">
+            <img src="kepek/6.jpg" alt="Kecskemét vasútállomáson 2010-ben" title="M61 006">
+            <img src="kepek/7.jpg" alt=" Vasúttörténeti Parkban" title="M61 001">
+            <img src="kepek/8.jpg" alt="Makó" title="Bzmot 384 ">
+            <img src="kepek/9.jpg" alt="Motorkocsi és motormellék kocsi a sorozat új színtervével" title="Bzmot">
+            <img src="kepek/10.jpg" alt="Győrben Innofreight konténervonatta" title="009-es Taurus">
+            <img src="kepek/11.jpg" alt="Keleti pályaudvar" title="Taurus mozdony">
+
+        </article>
+
+    </div>
+
+    <footer class="container">
+        <aside class="lablec">
+            <h3>Kövessen minket</h3>
+            Facebook: Mozdony Világ <br>
+            Instagram: @mozdonyvilag <br>
+            Twitter: @Mozdony_Világ <br>
+            Youtube: Mozdony Világ
+
+        </aside>
+        <aside class="lablec">
+            <h3>Kapcsolat</h3>
+            <p>Mozdony Világ | Cím: Példa utca 123, Példa Város, 1234 <br> Telefon: +36 1 234 5678 | Email:
+                info@mozdonyvilág.hu</p>
+        </aside>
+        <aside class="lablec">
+            <p><em>© 2023 Mozdony Világ. Minden jog fenntartva.</em></p>
+        </aside>
+
+    </footer>
+</body>
+
+</html>
